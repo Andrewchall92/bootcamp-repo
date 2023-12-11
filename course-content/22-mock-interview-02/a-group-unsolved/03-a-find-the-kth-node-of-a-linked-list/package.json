@@ -1,0 +1,12 @@
+{
+  "name": "03-a-find-the-kth-node-of-a-linked-list",
+  "version": "1.0.0",
+  "description": "## Kth-node of a linked-list",
+  "main": "unsolved.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
