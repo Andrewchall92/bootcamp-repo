@@ -20,7 +20,9 @@ const Cart = () => {
   // Then we should redirect to the checkout with a reference to our session id
   useEffect(() => {
     if (data) {
+      console.log(data)
       stripePromise.then((res) => {
+       
         // https://stripe.com/docs/js/deprecated/redirect_to_checkout
         res.redirectToCheckout({ sessionId: data.checkout.session });
       });
@@ -55,6 +57,7 @@ const Cart = () => {
   // When the submit checkout method is invoked, loop through each item in the cart
   // Add each item id to the productIds array and then invoke the getCheckout query passing an object containing the id for all our products
   function submitCheckout() {
+    console.log('checkout submitted')
 
     getCheckout({
       variables: { 
@@ -72,6 +75,8 @@ const Cart = () => {
       </div>
     );
   }
+
+  console.log
 
   return (
     <div className="cart">

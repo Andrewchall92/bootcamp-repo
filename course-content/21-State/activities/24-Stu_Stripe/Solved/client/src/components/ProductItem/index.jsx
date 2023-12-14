@@ -15,6 +15,7 @@ function ProductItem(item) {
     quantity
   } = item;
 
+  console.log(item);
   const { cart } = state
 
   const addToCart = () => {
